@@ -4,17 +4,23 @@ This is a simple python package that can be used to clean a verbose regex patter
 
 ## Installation
 
-pip install regex_cleaner
+```bash
+python -m pip install regex-cleaner
+```
 
-## Examples
+## Usage
+
+To clean a regex pattern, simply pass the verbose pattern string to the function `clean_regex`.
 
 ```python
 pattern = """
-    This is a verbose regex #With comments.
+    \w\d{3} # Matches any letter followed by 3 digits.
 """
 cleaned_regex = clean_regex(pattern)
+
+print(cleaned_regex)
 ```
-gives
-```
-cleaned_regex = "This is a verbose regex"
+
+```bash
+\w\d{3}
 ```

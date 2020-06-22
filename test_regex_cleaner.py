@@ -1,6 +1,6 @@
 import pytest
 
-from .regex_cleaner.regex_cleaner import clean_regex
+from regex_cleaner import clean_regex
 
 
 @pytest.mark.parametrize(
