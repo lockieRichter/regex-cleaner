@@ -8,15 +8,20 @@ setuptools.setup(
     version="0.0.1",
     author="Lockie Richter",
     author_email="richter.lockie@gmail.com",
-    description="A small package to remove comments from verbose regex patterns.",
+    description="A small package to convert verbose regex patterns to simple regex patterns.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/lockieRichter/regex_cleaner",
-    packages=setuptools.find_packages(),
+    py_modules=["regex_cleaner"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=["regex"],
     python_requires=">=3.6",
+    entry_points="""
+        [console_scripts]
+        clean_regex=regex_cleaner:clean_regex
+    """,
 )
