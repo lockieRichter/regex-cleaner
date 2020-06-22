@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="regex_cleaner",  # Replace with your own username
-    version="0.0.1",
+    version="1.0.0",
     author="Lockie Richter",
     author_email="richter.lockie@gmail.com",
     description="A small package to convert verbose regex patterns to simple regex patterns.",
